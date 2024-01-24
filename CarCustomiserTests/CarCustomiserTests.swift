@@ -12,7 +12,7 @@ final class CarCustomiserTests: XCTestCase {
     func testNewCarGivesMeACarWithAllAttributesSet() {
         //arrange
         //act
-        let car = Car(Make: "Mazda", model: "MX-5", topSpeed: 125, acceleration: 7.7 handling: 5)
+        let car = Car(make: "Mazda", model: "MX-5", topSpeed: 125, acceleration: 7.7, handling: 5)
         //assert
         XCTAssertEqual(car.make, "Mazda")
         XCTAssertEqual(car.model, "MX-5")

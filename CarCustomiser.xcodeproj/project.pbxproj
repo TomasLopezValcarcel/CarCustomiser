@@ -17,6 +17,7 @@
 		C3294FFF2B59E91B009F30AB /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3294FFE2B59E91B009F30AB /* Car.swift */; };
 		C32950002B59E968009F30AB /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3294FFE2B59E91B009F30AB /* Car.swift */; };
 		C32950012B59ECD0009F30AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3294FD62B59E61B009F30AB /* ContentView.swift */; };
+		C32AA10B2B5F97E2002BB29F /* StarterCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32AA10A2B5F97E2002BB29F /* StarterCars.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		C3294FEF2B59E61D009F30AB /* CarCustomiserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCustomiserUITests.swift; sourceTree = "<group>"; };
 		C3294FF12B59E61D009F30AB /* CarCustomiserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCustomiserUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C3294FFE2B59E91B009F30AB /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		C32AA10A2B5F97E2002BB29F /* StarterCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterCars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				C3294FD82B59E61D009F30AB /* Assets.xcassets */,
 				C3294FDA2B59E61D009F30AB /* Preview Content */,
 				C3294FFE2B59E91B009F30AB /* Car.swift */,
+				C32AA10A2B5F97E2002BB29F /* StarterCars.swift */,
 			);
 			path = CarCustomiser;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				C3294FD72B59E61B009F30AB /* ContentView.swift in Sources */,
 				C3294FD52B59E61B009F30AB /* CarCustomiserApp.swift in Sources */,
+				C32AA10B2B5F97E2002BB29F /* StarterCars.swift in Sources */,
 				C3294FFF2B59E91B009F30AB /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +434,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CarCustomiser/Preview Content\"";
+				DEVELOPMENT_TEAM = DJURY3Y3F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -459,6 +464,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CarCustomiser/Preview Content\"";
+				DEVELOPMENT_TEAM = DJURY3Y3F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
