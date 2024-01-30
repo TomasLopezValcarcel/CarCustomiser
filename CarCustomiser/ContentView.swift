@@ -17,35 +17,26 @@ struct ContentView: View {
 
     
     @State private var balance = 1125
+    
+    @State private var timeRemaining = 30
 
-    var exhaustPackageEnabled: Bool{
-        if self.exhaustPackage == true{
-            return true
-        } else if balance >= 500 && self.exhaustPackage == false{
-            return true
-        } else{
-            return false
-        }
-    }
-    var tiresPackageEnabled: Bool{
-        if self.tiresPackage == true{
-            return true
-        } else if balance >= 600 && self.tiresPackage == false{
-            return true
-        } else{
-            return false
-        }
-    }
-    var sportsPackageEnabled: Bool{
-        if self.sportsPackage == true{
-            return true
-        } else if balance >= 650 && self.sportsPackage == false{
-            return true
-        } else{
-            return false
-        }
+    var nextCarEnabled: Bool{
+        return timeRemaining == 0 ? false : true
     }
     
+    var exhaustPackageEnabled: Bool{
+        return timeRemaining == 0 ? false : exhaustPackage ? true : balance >= 500 ? true : false
+
+    }
+    var tiresPackageEnabled: Bool{
+        return timeRemaining == 0 ? false : tiresPackage ? true : balance >= 600 ? true : false
+
+    }
+    var sportsPackageEnabled: Bool{
+        return timeRemaining == 0 ? false : sportsPackage ? true : balance >= 650 ? true : false
+    }
+    
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
         let exhaustPackageBinding = Binding<Bool> (
@@ -88,6 +79,13 @@ struct ContentView: View {
             }
         )
         VStack{
+            Text("\(timeRemaining)")
+                .onReceive(timer) { _ in
+                    if self.timeRemaining > 0{
+                        self.timeRemaining -= 1
+                    }
+                }
+                .foregroundColor(.red)
             Form{
                 VStack(alignment: .leading, spacing: 20){
                     Text(starterCars.cars[selectedCar].statsDisplay())
@@ -101,6 +99,7 @@ struct ContentView: View {
                             resetDisplay()
                         }
                     })
+                    .disabled(!nextCarEnabled)
                 }
                 Section{
                     Toggle("Exhaust Package (Cost: 500)", isOn: exhaustPackageBinding)

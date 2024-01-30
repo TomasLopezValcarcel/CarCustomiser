@@ -22,12 +22,22 @@ final class CarCustomiserUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func testWhenBoughtTiresAndExhaustPackageOtherUpgradesAreDisabled() throws {
+        //arrange
         let app = XCUIApplication()
         app.launch()
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        //act
+        
+        let tablesQuery = app.tables
+        tablesQuery.switches["Exhaust Package (Cost: 500)"].tap()
+        tablesQuery.switches["Tires Package (Cost: 600)"].tap()
+        
+                
+        
+        //assert
+        XCTAssertEqual(tablesQuery.switches["Sports Package (Cost: 750)"].isEnabled, false)
+                
     }
 
     func testLaunchPerformance() throws {

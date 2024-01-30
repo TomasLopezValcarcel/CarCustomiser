@@ -18,6 +18,13 @@
 		C32950002B59E968009F30AB /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3294FFE2B59E91B009F30AB /* Car.swift */; };
 		C32950012B59ECD0009F30AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3294FD62B59E61B009F30AB /* ContentView.swift */; };
 		C32AA10B2B5F97E2002BB29F /* StarterCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32AA10A2B5F97E2002BB29F /* StarterCars.swift */; };
+		C3A4C7E62B68D94F00D6BFBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3294FD62B59E61B009F30AB /* ContentView.swift */; };
+		C3A4C7E72B68D9A300D6BFBD /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3294FFE2B59E91B009F30AB /* Car.swift */; };
+		C3A4C7E82B68D9A600D6BFBD /* StarterCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32AA10A2B5F97E2002BB29F /* StarterCars.swift */; };
+		C3A4C7E92B68D9A700D6BFBD /* StarterCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32AA10A2B5F97E2002BB29F /* StarterCars.swift */; };
+		C3A4C7EA2B68D9AD00D6BFBD /* CarCustomiserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3294FD42B59E61B009F30AB /* CarCustomiserApp.swift */; };
+		C3A4C7EB2B68D9AD00D6BFBD /* CarCustomiserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3294FD42B59E61B009F30AB /* CarCustomiserApp.swift */; };
+		C3A4C7EC2B68D9B100D6BFBD /* CarCustomiserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3294FE52B59E61D009F30AB /* CarCustomiserTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -276,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A4C7EA2B68D9AD00D6BFBD /* CarCustomiserApp.swift in Sources */,
 				C32950002B59E968009F30AB /* Car.swift in Sources */,
 				C3294FE62B59E61D009F30AB /* CarCustomiserTests.swift in Sources */,
+				C3A4C7E92B68D9A700D6BFBD /* StarterCars.swift in Sources */,
 				C32950012B59ECD0009F30AB /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +297,11 @@
 			files = (
 				C3294FF02B59E61D009F30AB /* CarCustomiserUITests.swift in Sources */,
 				C3294FF22B59E61D009F30AB /* CarCustomiserUITestsLaunchTests.swift in Sources */,
+				C3A4C7EC2B68D9B100D6BFBD /* CarCustomiserTests.swift in Sources */,
+				C3A4C7E72B68D9A300D6BFBD /* Car.swift in Sources */,
+				C3A4C7E82B68D9A600D6BFBD /* StarterCars.swift in Sources */,
+				C3A4C7EB2B68D9AD00D6BFBD /* CarCustomiserApp.swift in Sources */,
+				C3A4C7E62B68D94F00D6BFBD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
